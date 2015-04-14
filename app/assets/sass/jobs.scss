@@ -1,0 +1,36 @@
+@import 'elements';
+@import 'components/back_link';
+
+.jd__title h1 {
+  margin: $gutter 0 0;
+}
+
+.jd__title p {
+  margin: 0;
+  padding: $gutter-half 0;
+}
+
+.jd__title--department {
+  font-weight: 400;
+  color: $secondary-text-colour;
+}
+
+.jd__description {
+  margin: 0;
+}
+
+.jd__content, .jd__key-info {
+  padding: $gutter-half;
+}
+
+.jd__content {
+  padding-left: $gutter;
+}
+
+.jd__key-info {
+  background: $panel-colour;
+}
+
+.jd__key-info__item h4 {
+  margin: 0 0 0.25em;
+}
