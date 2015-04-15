@@ -1,10 +1,24 @@
 [
 {
   "ref": 1446570,
-  "role": "Developer",
+  "role": "Full stack developer",
   "department": "Government Digital Service (GDS)",
   "closing": "Closing date: 17 Apr 2015",
   "skills": [ "Agile", "Javascript", "Ruby", "Python", "User needs", "HTML", "CSS", "Problem solving", "Digital services", "User centred design", "Web security", "Open standards", "Open source"]
+},
+{
+  "ref": 1446611,
+  "role": "Frontend developer",
+  "department": "Government Digital Service (GDS)",
+  "closing": "Closing date: 17 Apr 2015",
+  "skills": [ "Agile", "Javascript", "User needs", "HTML", "CSS", "Problem solving", "Digital services", "User centred design", "Web security", "Open standards", "Open source"]
+},
+{
+  "ref": 1446533,
+  "role": "Backend developer",
+  "department": "Government Digital Service (GDS)",
+  "closing": "Closing date: 17 Apr 2015",
+  "skills": [ "Agile", "Javascript", "Ruby", "Python", "User needs", "Relational DBs", "Problem solving", "Digital services", "User centred design", "Web security", "Open standards", "Open source"]
 },
 {
   "ref": 1449037,
