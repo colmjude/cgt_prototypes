@@ -1,5 +1,6 @@
 @import 'elements';
 @import 'components/back_link';
+@import 'components/search';
 
 .jd__title h1 {
   margin: $gutter 0 0;
@@ -33,4 +34,41 @@
 
 .jd__key-info__item h4 {
   margin: 0 0 0.25em;
+}
+
+/* search result specific */
+.jd__listing {
+  border-bottom: 1px solid $panel-colour;
+
+  .jd__role {
+    margin-bottom: 0;
+  }
+
+  .jd__title--department {
+    margin: 0;
+  }
+
+  .jd__reference {
+    float: right;
+    width: 3*$gutter;
+    line-height: 40px;
+  }
+
+  .jd__closing-date {
+    margin-top: 1em;
+  }
+
+  .jd__assoc-skills li {
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    margin-right: $gutter-half;
+    margin-bottom: $gutter-half;
+    border: 1px solid $panel-colour;
+
+    &:hover {
+      cursor: pointer;
+      background: $panel-colour;
+      color: $page-colour;
+    }
+  }
 }
