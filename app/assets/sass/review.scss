@@ -36,3 +36,17 @@
     right: 0.5em;
   }
 }
+
+.caption {
+  font-size: 16px;
+  color: $secondary-text-colour;
+}
+
+.review__section {
+  border-top: 1px solid $border-colour;
+  padding-top: $gutter;
+
+  h2 {
+    margin-top: 0;
+  }
+}
