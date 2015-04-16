@@ -2,6 +2,7 @@
 
 {{$head}}
   {{>includes/jobs_head}}
+  <link href="/public/stylesheets/review.css" media="screen" rel="stylesheet" type="text/css" />
 {{/head}}
 
 {{$content}}
@@ -17,7 +18,7 @@
 
     <p class="lede">Please rate your colleague for the following skills</p>
 
-    <table>
+    <table class="review__table">
       <thead>
         <tr>
           <th scope="col">Skill</th>
@@ -56,6 +57,11 @@
         {{/skills}}
       </tbody>
     </table>
+
+    <div class="form-group">
+      <label class="form-label" for="other-comments">Any other comments</label>
+      <textarea class="form-control" type="text" id="other-comments"></textarea>
+    </div>
 
     <!-- Primary buttons, secondary links -->
     <div class="form-group">
