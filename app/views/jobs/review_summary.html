@@ -1,0 +1,38 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/jobs_head}}
+  <link href="/public/stylesheets/review.css" media="screen" rel="stylesheet" type="text/css" />
+{{/head}}
+
+{{$content}}
+<main id="content" role="main">
+
+  <a href="/" class="example-back-link">Back to the cross government tools' prototypes</a>
+
+  <h1 class="form-title heading-large">
+    Your review
+  </h1>
+
+  <p class="lede">Compare how you thought you've performed with how your colleague think you've performed</p>
+
+  <div class="grid-row">
+    <div class="column-half">
+      <img src="http://placehold.it/450x300" alt="" />
+      <p class="caption">How you scored yourself</p>
+    </div>
+    <div class="column-half">
+      <img src="http://placehold.it/450x300" alt="" />
+      <p class="caption">How your colleagues scored you</p>
+    </div>
+  </div>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+  <script src="/public/javascripts/review.js"></script>
+{{/bodyEnd}}
+
+{{/govuk_template}}
