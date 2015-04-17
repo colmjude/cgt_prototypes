@@ -1,0 +1,22 @@
+.profile {
+  @extend %contain-floats;
+  padding-bottom: $gutter;
+}
+.profile__pic {
+  float: left;
+  width: 100px;
+  padding-right: $gutter;
+}
+
+.profile__info {
+  float: left;
+  width: 50%;
+}
+
+.profile__name {
+  font-weight: 700;
+}
+
+.profile__team {
+  color: $secondary-text-colour;
+}
