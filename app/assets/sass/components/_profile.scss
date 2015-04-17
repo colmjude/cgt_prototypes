@@ -1,6 +1,8 @@
 .profile {
   @extend %contain-floats;
-  padding-bottom: $gutter;
+  margin-bottom: $gutter;
+  padding: $gutter-half;
+  border: 1px solid $border-colour;
 }
 .profile__pic {
   float: left;
