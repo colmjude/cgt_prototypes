@@ -22,3 +22,26 @@
 .profile__team {
   color: $secondary-text-colour;
 }
+
+.profile--right {
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  .profile {
+    text-align: right;
+  }
+  .profile__pic {
+    float: right;
+    padding-right: 0;
+  }
+  .profile__info {
+    float: right;
+    width: 50%;
+    padding-right: $gutter;
+  }
+}
+
+.profile--include {
+  position: relative;
+}
