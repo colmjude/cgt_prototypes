@@ -37,5 +37,18 @@ module.exports = {
           {"name": "open-source", "display_name": "Open source"}
         ]});
     });
+
+    app.get('/jobs/to_review', function (req, res) {
+      res.render('jobs/to_review', {team: [
+          {"name": "Joe Bloggs", "role": "Product manager", "team": "Cross government tools"},
+          {"name": "Claire Bloggs", "role": "Delivery manager", "team": "Cross government tools", "status": "reviewed"},
+          {"name": "Neville Neville", "role": "User researcher", "team": "Cross government tools", "status": "draft"}
+        ],
+        others: [
+            {"name": "Helen Jones", "role": "Developer", "team": "CTS"},
+            {"name": "Daniel Hardy", "role": "Developer", "team": "Land Registry"},
+            {"name": "Rachel Shade", "role": "User researcher", "team": "Land Registry"}
+          ]});
+    });
   }
 };

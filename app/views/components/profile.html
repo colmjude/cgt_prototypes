@@ -1,11 +1,16 @@
-<div class="profile">
-  <img src="http://placehold.it/100x100" alt="" class="profile__pic" />
+<div class="profile profile__status profile__status--{{status}}">
+  <img src="http://placehold.it/100x100" class="profile__pic">
   <div class="profile__info">
-    <h3 class="heading-normal profile__name">Joe Bloggs</h3>
+    <h3 class="heading-normal profile__name">{{name}}{{^name}}Joe Bloggs{{/name}}</h3>
     <ul>
-      <li>Developer</li>
-      <li class="profile__team">Cross government tools</li>
-      <li><a href="">view job description</a></li>
+      <li>{{role}}{{^role}}Developer{{/role}}</li>
+      <li class="profile__team">{{team}}{{^team}}Cross government tools{{/team}}</li>
+      <li>
+        <ul>
+          <li><a href="">view job description</a></li>
+          <li class="profile--review"><a href="">perform review</a></li>
+        </ul>
+      </li>
     </ul>
   </div>
 </div>

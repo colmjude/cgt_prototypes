@@ -4,6 +4,7 @@
   padding: $gutter-half;
   border: 1px solid $border-colour;
 }
+
 .profile__pic {
   float: left;
   width: 100px;
@@ -44,4 +45,38 @@
 
 .profile--include {
   position: relative;
+}
+
+.profile__status {
+  position: relative;
+
+  &::before {
+    visibility: hidden;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $page-colour;
+    position: absolute;
+    top: $gutter/3;
+    right: 0;
+    line-height: 1em;
+    padding: 5px 5px 2px;
+    font-weight: 600;
+  }
+  
+}
+
+.profile__status--reviewed::before {
+  visibility: visible;
+  content: "reviewed";
+  background: $button-colour;
+}
+
+.profile__status--draft::before {
+  visibility: visible;
+  content: "draft";
+  background: $beta-colour;
+}
+
+.profile--review {
+  display: none;
 }
