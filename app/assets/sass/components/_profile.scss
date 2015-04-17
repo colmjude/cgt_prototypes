@@ -7,7 +7,7 @@
 .profile__pic {
   float: left;
   width: 100px;
-  padding-right: $gutter;
+  padding-right: $gutter-half;
 }
 
 .profile__info {
@@ -38,7 +38,7 @@
   .profile__info {
     float: right;
     width: 50%;
-    padding-right: $gutter;
+    padding-right: $gutter-half;
   }
 }
 
