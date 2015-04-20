@@ -62,6 +62,10 @@
 }
 
 .jd__save {
+  &:hover {
+    cursor: pointer;
+  }
+
   .jd__save-later {
     display: block;
   }
