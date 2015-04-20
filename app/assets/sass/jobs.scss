@@ -61,6 +61,28 @@
 
 }
 
+.jd__save {
+  .jd__save-later {
+    display: block;
+  }
+}
+.jd__save.saved {
+  .jd__save-later {
+    display: none;
+  }
+  .jd__saved-icon {
+    display: block;
+  }
+}
+
+.jd__save-later,
+.jd__saved-icon {
+  display: none;
+  margin: 0 auto;
+  width: $gutter;
+  height: $gutter;
+}
+
 .skill {
   display: inline-block;
   padding: 0.25em 0.5em;
@@ -74,3 +96,4 @@
     color: $page-colour;
   }
 }
+

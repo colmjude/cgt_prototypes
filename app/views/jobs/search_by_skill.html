@@ -34,7 +34,14 @@
       {{#listings}}
 
       <li class="jd__listing">
-        <div class="jd__reference"><p>#{{ref}}</p></div>
+        <div class="jd__reference">
+          <span>#{{ref}}</span>
+          <div class="jd__save">
+            <img class="jd__save-later" src="/public/images/star_outline.svg" alt="" />
+            <img class="jd__saved-icon" src="/public/images/star_filled.svg" alt="" />
+          </div>
+        </div>
+        
         <h1 class="heading-large jd__role">{{role}}</h1>
         <p class="heading-medium jd__title--department">{{department}}</p>
         <p class="heading-medium jd__closing-date">{{closing}}</p>

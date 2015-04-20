@@ -44,6 +44,10 @@
     }).parents("form").on('submit', function(e) {
       e.preventDefault();
     });
+
+    $(".jd__save").on('click', function() {
+      $(this).toggleClass( 'saved' );
+    });
   });
 
 }(jQuery));
