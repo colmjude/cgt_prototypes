@@ -15,3 +15,9 @@
 .skills-list--dark li {
   border-color: $page-colour;
 }
+
+.jd__assoc-skills .skill--highlighted {
+  background: $link-hover-colour;
+  color: $page-colour;
+  border-color: $link-hover-colour;
+}

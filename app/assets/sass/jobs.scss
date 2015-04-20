@@ -59,17 +59,18 @@
     margin-top: 1em;
   }
 
-  .jd__assoc-skills li {
-    display: inline-block;
-    padding: 0.25em 0.5em;
-    margin-right: $gutter-half;
-    margin-bottom: $gutter-half;
-    border: 1px solid $panel-colour;
+}
 
-    &:hover {
-      cursor: pointer;
-      background: $panel-colour;
-      color: $page-colour;
-    }
+.skill {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  margin-right: $gutter-half;
+  margin-bottom: $gutter-half;
+  border: 1px solid $panel-colour;
+
+  &:hover {
+    cursor: pointer;
+    background: $panel-colour;
+    color: $page-colour;
   }
 }
