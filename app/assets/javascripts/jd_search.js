@@ -10,11 +10,10 @@
     var $jdResults = $(".jd__results");
     var $skillItems = $(".skill");
 
-    console.log($skillItems);
-
     $jdResults.find(".jd__listing").hide();
 
     var displaySkillSearchResults = function(skill) {
+      var skill = "" || skill;
       $searchInput.val(skill);
       $skillItems.removeClass("skill--highlighted");
       $("[data-skill='" + skill + "']")
@@ -35,8 +34,15 @@
       displaySkillSearchResults(hash);
     }
 
+    // bind events
     $skillItems.on('click', function(e) {
       updateSkillSearch($(this).data('skill'));
+    });
+
+    $searchInput.on('change', function() {
+      updateSkillSearch($(this).val());
+    }).parents("form").on('submit', function(e) {
+      e.preventDefault();
     });
   });
 
