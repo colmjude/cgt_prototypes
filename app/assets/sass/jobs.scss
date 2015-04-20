@@ -2,6 +2,7 @@
 @import 'components/back_link';
 @import 'components/search';
 @import 'components/skills';
+@import 'components/sections';
 
 .jd__title h1 {
   margin: $gutter 0 0;
@@ -108,3 +109,12 @@
   padding: em(10) em(10) em(5) em(10);
 }
 
+.search__form {
+  position: relative;
+}
+
+.nav {
+  position: absolute;
+  bottom: -$gutter;
+  right: 0;
+}
