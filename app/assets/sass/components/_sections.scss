@@ -1,8 +1,12 @@
-.review__section {
+.section {
   border-top: 1px solid $border-colour;
   padding-top: $gutter;
 
   & > h2 {
     margin-top: 0;
   }
+}
+
+.review__section {
+  @extend .section;
 }
