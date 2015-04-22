@@ -9,11 +9,31 @@
 
   <a href="/" class="example-back-link">Back to the cross government tools' prototypes</a>
 
+  <section class="section">
+    <h2 class="heading-large">Find people in your profession</h2>
+
+    <form action="">
+      <input type="text" list="data-people" />
+      <datalist id="data-people">
+        <option value="Alyson">Alyson</option>
+        <option value="Angela">Angela</option>
+        <option value="Colm">Colm</option>
+        <option value="Elisse">Elisse</option>
+        <option value="Dave">Dave</option>
+        <option value="David">David</option>
+        <option value="Juan">Juan</option>
+        <option value="Jim">Jim</option>
+        <option value="Neha">Neha</option>
+      </datalist>
+    </form>
+  </section>
+
 </main><!-- / #page-container -->
 {{/content}}
 
 {{$bodyEnd}}
   {{>includes/elements_scripts}}
+  <script src="/public/javascripts/lib/underscore.js"></script>
   <script src="/public/javascripts/professions.js"></script>
 {{/bodyEnd}}
 
