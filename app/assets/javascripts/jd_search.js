@@ -6,10 +6,10 @@
 
   // on DOM ready
   $(function() {
-    var $searchInput = $("#jd_search");
-    var $jdResults = $(".jd__results");
-    var $skillItems = $(".skill");
-    var $searchResultsNum = $(".search-results__number span");
+    var $searchInput = $("#jd_search"),
+        $jdResults = $(".jd__results"),
+        $skillItems = $(".skill"),
+        $searchResultsNum = $(".search-results__number span");
 
     $jdResults.find(".jd__listing").hide();
 
