@@ -9,6 +9,7 @@
     var $searchInput = $("#jd_search");
     var $jdResults = $(".jd__results");
     var $skillItems = $(".skill");
+    var $searchResultsNum = $(".search-results__number span");
 
     $jdResults.find(".jd__listing").hide();
 
@@ -20,6 +21,11 @@
         .addClass("skill--highlighted")
         .parents(".jd__listing")
           .show();
+      // update the search results value
+      $searchResultsNum
+        .text($(".jd__listing:visible").length)
+        .parent()
+          .addClass("search-results__number--active");
     };
 
     var updateSkillSearch = function(skill) {
