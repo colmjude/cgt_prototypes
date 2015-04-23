@@ -22,6 +22,28 @@
 
       <section class="section">
         <h2 class="heading-medium">Current vacancies</h2>
+        <ul class="jd__results">
+
+        {{#listings}}
+          <li class="jd__listing jd__listing--small">
+            <div class="jd__reference">
+              <span>#{{ref}}</span>
+              <div class="jd__save">
+                <a href="" class="button">Apply now</a>
+              </div>
+            </div>
+
+            <h3 class="jd__role">{{role}}</h3>
+            <p class="jd__title--department">{{department}}</p>
+            <p class="jd__closing-date">{{closing}}</p>
+            <span class="jd__readmore"><a href="">read more</a></span>
+            
+          </li>
+        {{/listings}}
+
+        </ul>
+
+        <p class="jd_results__more"><a href="">-- see more vacancies --</a></p>
       </section>
 
       <section class="section">
