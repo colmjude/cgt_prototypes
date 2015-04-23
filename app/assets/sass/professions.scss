@@ -40,3 +40,24 @@
     color: $link-colour;
   }
 }
+
+.learning-section {
+  padding: 0;
+
+  a {
+    text-decoration: none;
+    color: $text-colour;
+  }
+
+  &:hover a {
+    color: $link-colour;
+  }
+}
+
+.learning-section:first-of-type {
+  padding-right: $gutter-half;
+}
+
+.learning-section__img {
+  max-width: 100%;
+}
