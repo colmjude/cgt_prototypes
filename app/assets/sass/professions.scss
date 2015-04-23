@@ -8,6 +8,11 @@
 
 .people-search-form {
   margin-bottom: $gutter-half;
+
+  input {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
 
 .people-search-results:empty {
