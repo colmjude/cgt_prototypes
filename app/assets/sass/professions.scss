@@ -4,6 +4,7 @@
 @import 'components/profile';
 @import 'components/community';
 @import 'components/jds';
+@import 'components/event';
 
 .people-search-form {
   margin-bottom: $gutter-half;
@@ -11,4 +12,8 @@
 
 .people-search-results:empty {
   display: none;
+}
+
+.column-three-quarters {
+  @include grid-column(3/4);
 }
