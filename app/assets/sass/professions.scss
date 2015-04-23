@@ -17,3 +17,17 @@
 .column-three-quarters {
   @include grid-column(3/4);
 }
+
+.data__narrative {
+  margin-bottom: 0;
+}
+
+.link__out {
+  color: $link-colour;
+  font-size: 16px;
+  text-decoration: none;
+
+  &:visited {
+    color: $link-colour;
+  }
+}
