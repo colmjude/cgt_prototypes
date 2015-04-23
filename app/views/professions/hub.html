@@ -13,7 +13,7 @@
     <h2 class="heading-large">Find people in your profession</h2>
 
     <form action="">
-      <input type="text" list="data-people" />
+      <input type="text" list="data-people" id="people_search" />
       <datalist id="data-people">
         <option value="Alyson">Alyson</option>
         <option value="Angela">Angela</option>
@@ -28,12 +28,16 @@
     </form>
   </section>
 
+  <section class="section people-search-results">
+  </section>
+
 </main><!-- / #page-container -->
 {{/content}}
 
 {{$bodyEnd}}
   {{>includes/elements_scripts}}
   <script src="/public/javascripts/lib/underscore.js"></script>
+  <script src="/public/javascripts/lib/mustache.min.js"></script>
   <script src="/public/javascripts/professions.js"></script>
 {{/bodyEnd}}
 
