@@ -9,27 +9,37 @@
 
   <a href="/" class="example-back-link">Back to the cross government tools' prototypes</a>
 
-  <section class="section">
-    <h2 class="heading-large">Find people in your profession</h2>
+  <div class="grid-row">
+    <div class="column-two-thirds"></div>
 
-    <form action="">
-      <input type="text" list="data-people" id="people_search" />
-      <datalist id="data-people">
-        <option value="Alyson">Alyson</option>
-        <option value="Angela">Angela</option>
-        <option value="Colm">Colm</option>
-        <option value="Elisse">Elisse</option>
-        <option value="Dave">Dave</option>
-        <option value="David">David</option>
-        <option value="Juan">Juan</option>
-        <option value="Jim">Jim</option>
-        <option value="Neha">Neha</option>
-      </datalist>
-    </form>
-  </section>
+    <div class="column-third">
+      <section class="section">
+        <h2 class="heading-large">Find people in your profession</h2>
 
-  <section class="section people-search-results">
-  </section>
+        <form action="" class="people-search-form">
+          <p class="form-hint">Search by name or keyword</p>
+          <input type="text" list="data-people" id="people_search" />
+          <datalist id="data-people">
+            <option value="Alyson">Alyson</option>
+            <option value="Angela">Angela</option>
+            <option value="Colm">Colm</option>
+            <option value="Elisse">Elisse</option>
+            <option value="Dave">Dave</option>
+            <option value="David">David</option>
+            <option value="Juan">Juan</option>
+            <option value="Jim">Jim</option>
+            <option value="Neha">Neha</option>
+          </datalist>
+        </form>
+      </section>
+
+      <!-- needs to be on one line for :empty pseudo class to work -->
+      <section class="section people-search-results"></section>
+    </div>
+
+  </div>
+
+  
 
 </main><!-- / #page-container -->
 {{/content}}
