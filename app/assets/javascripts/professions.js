@@ -2,9 +2,16 @@
   'use strict';
 
   var people = [
-    {'name': 'Colm', "skills": ['css', "javascript"]},
-    {'name': 'Elisse', "skills": ['agile', "delivery"]},
-    {'name': 'Juan', "skills": ['agile', "javascript"]}
+    {"name": "Alyson Fielding", "role":"Business analyst", "team":"Cross government tools", "skills": ["agile", "user needs"]},
+    {"name": "Angela Collins-Rees", "role":"User researcher", "team":"Cross government tools", "skills": ["agile", "user research"]},
+    {"name": "Colm Britton", "role":"Designer/developer", "team":"Cross government tools", "skills": ["agile", "css", "html", "javascript"]},
+    {"name": "Elisse Jones", "role":"Delivery manager", "team":"Cross government tools", "skills": ["agile", "delivery"]},
+    {"name": "Dave Hearsey", "role":"Content designer", "team":"Cross government tools", "skills": ["agile", "user needs", "content"]},
+    {"name": "Dave Mann", "role":"Product manager", "team":"Cross government tools", "skills": ["agile", "delivery"]},
+    {"name": "Juan Uys", "role":"Developer", "team":"Cross government tools", "skills": ["agile", "development", "python", "ruby"]},
+    {"name": "Jim Williams", "role":"Data analyst", "team":"Cross government tools", "skills": ["agile", "data analysis"]},
+    {"name": "Katya Lakshtanova", "role":"User researcher", "team":"Cross government tools", "skills": ["agile", "user research"]},
+    {"name": "Neha Datt", "role":"Business analyst", "team":"Cross government tools", "skills": ["agile", "user needs"]}
   ];
 
   var tmpl = ['<div class="profile">',
