@@ -61,3 +61,16 @@
 .learning-section__img {
   max-width: 100%;
 }
+
+.data__skills {
+  margin-top: $gutter;
+
+  .bold-xlarge,
+  .bold-small {
+    margin: 0;
+  }
+
+  ul {
+    padding-left: $gutter;
+  }
+}
