@@ -2,16 +2,16 @@
   'use strict';
 
   var people = [
-    {"name": "Alyson Fielding", "role":"Business analyst", "team":"Cross gov tools", "skills": ["agile", "user needs"]},
-    {"name": "Angela Collins-Rees", "role":"User researcher", "team":"Cross gov tools", "skills": ["agile", "user research"]},
-    {"name": "Colm Britton", "role":"Designer/developer", "team":"Cross gov tools", "skills": ["agile", "css", "html", "javascript"]},
-    {"name": "Elisse Jones", "role":"Delivery manager", "team":"Cross gov tools", "skills": ["agile", "delivery"]},
-    {"name": "Dave Hearsey", "role":"Content designer", "team":"Cross gov tools", "skills": ["agile", "user needs", "content"]},
-    {"name": "Dave Mann", "role":"Product manager", "team":"Cross gov tools", "skills": ["agile", "delivery"]},
-    {"name": "Juan Uys", "role":"Developer", "team":"Cross gov tools", "skills": ["agile", "development", "python", "ruby"]},
-    {"name": "Jim Williams", "role":"Data analyst", "team":"Cross gov tools", "skills": ["agile", "data analysis"]},
-    {"name": "Katya Lakshtanova", "role":"User researcher", "team":"Cross gov tools", "skills": ["agile", "user research"]},
-    {"name": "Neha Datt", "role":"Business analyst", "team":"Cross gov tools", "skills": ["agile", "user needs"]}
+    {"name": "Alyson Fielding", "role":"Business analyst", "team":"Cross gov tools", "skills": ["agile", "analysis", "user needs", "web analytics", "change management"]},
+    {"name": "Angela Collins-Rees", "role":"User researcher", "team":"Cross gov tools", "skills": ["agile", "user research", "usability testing", "personas", "qualitative research"]},
+    {"name": "Colm Britton", "role":"Designer/developer", "team":"Cross gov tools", "skills": ["agile", "css", "html", "javascript", "web design"]},
+    {"name": "Elisse Jones", "role":"Delivery manager", "team":"Cross gov tools", "skills": ["agile", "delivery", "digital strategy", "governance", "change management"]},
+    {"name": "Dave Hearsey", "role":"Content designer", "team":"Cross gov tools", "skills": ["agile", "user needs", "content", "online publishing", "content strategy", "editorial"]},
+    {"name": "Dave Mann", "role":"Product manager", "team":"Cross gov tools", "skills": ["agile", "delivery", "digital strategy", "stakeholder management"]},
+    {"name": "Juan Uys", "role":"Developer", "team":"Cross gov tools", "skills": ["agile", "development", "python", "ruby", "open source", "unix", "web services", "tdd"]},
+    {"name": "Jim Williams", "role":"Data analyst", "team":"Cross gov tools", "skills": ["agile", "data analysis", "statistics", "research", "business intelligence", "pattern recognition", "web analytics", "analytics"]},
+    {"name": "Katya Lakshtanova", "role":"User researcher", "team":"Cross gov tools", "skills": ["agile", "user research", "usability testing", "personas", "qualitative research"]},
+    {"name": "Neha Datt", "role":"Business analyst", "team":"Cross gov tools", "skills": ["agile", "analysis", "user needs", "web analytics", "change management"]}
   ];
 
   var tmpl = ['<div class="profile profile--small">',
