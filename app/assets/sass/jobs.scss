@@ -125,3 +125,7 @@
   @include bold-16();
   display: inline-block;
 }
+
+.jd__email-contact a {
+  display: block;
+}
