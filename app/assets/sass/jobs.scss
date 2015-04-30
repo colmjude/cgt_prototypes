@@ -120,3 +120,8 @@
   bottom: -$gutter;
   right: 0;
 }
+
+.jd_-inline-heading {
+  @include bold-16();
+  display: inline-block;
+}
