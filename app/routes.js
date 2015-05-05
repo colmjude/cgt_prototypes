@@ -60,5 +60,17 @@ module.exports = {
           {"ref": "1450575", "role": "Financial Modelling Analyst", "department": "Homes and Communities Agency", "closing": "1 week to go"}
         ]});
     });
+
+    app.get('/jobs/description_developer', function (req, res) {
+      var data;
+      fs.readFile(path.join(__dirname, 'data/dev_jd.json'), {encoding: 'utf-8'}, function (err, data) {
+          if (err) {
+              throw err;
+          } else {
+            data = JSON.parse(data);
+          }
+          res.render('jobs/description_developer', data);
+      });
+    });
   }
 };

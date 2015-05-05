@@ -1,0 +1,137 @@
+<div class="jd__title">
+  <h1 class="heading-xlarge">{{role}}</h1>
+  <p class="heading-medium jd__title--department">{{team}}</p>
+  <p class="heading-medium">Closing date: {{closing_date}}</p>
+</div>
+
+<div class="grid-row jd__description">
+  <div class="column-third jd__key-info">
+    <div class="jd__key-info__item">
+      <h4 class="heading-small">Reference</h4>
+      <p>{{ref}}</p>
+    </div>
+    <div class="jd__key-info__item">
+      <h4 class="heading-small">Profession</h4>
+      <p>{{profession}}</p>
+    </div>
+    <div class="jd__key-info__item">
+      <h4 class="heading-small">Salary range</h4>
+      <p>{{salary_range}}</p>
+    </div>
+    <div class="jd__key-info__item">
+      <h4 class="heading-small">Average hours per week</h4>
+      <p>37</p>
+    </div>
+    <div class="jd__key-info__item">
+      <h4 class="heading-small">Associated skills</h4>
+      <ul class="skills-list skills-list--dark">
+        {{#skills.universal}}
+        <li class="skill"><a href="/jobs/search_by_skill#{{.}}">{{.}}</a></li>
+        {{/skills.universal}}
+      </ul>
+    </div>
+  </div>
+
+  <div class="column-two-thirds jd__content">
+
+    <table>
+      <tbody>
+        <tr>
+          <td>Division:</td>
+          <td>{{team}}</td>
+        </tr>
+        <tr>
+          <td>Department</td>
+          <td>{{department}}</td>
+        </tr>
+        <tr>
+          <td>Location:</td>
+          <td>{{location}}</td>
+        </tr>
+        <tr>
+          <td>Grade:</td>
+          <td>{{grade}}</td>
+        </tr>
+        <tr>
+          <td>Contract Type:</td>
+          <td>{{contract}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3 class="heading-medium">{{org.name}}</h3>
+
+    {{{org.desc}}}
+
+    <p>{{{org.more}}}</p>
+
+    <h3 class="heading-medium">The role</h3>
+
+    {{{role_desc}}}
+
+    <h3 class="heading-medium">Main responsibilities</h3>
+
+    <p>You’ll:</p>
+
+    <ul class="list-bullet">
+      {{#responsibilities}}
+      <li>{{.}}</li>
+      {{/responsibilities}}
+    </ul>
+
+    <h3 class="heading-medium">Skills and experience</h3>
+
+    <p>Essential:</p>
+
+    <ul class="list-bullet">
+      {{#skills.essential}}
+      <li>{{.}}</li>
+      {{/skills.essential}}
+    </ul>
+
+    <p>Desirable</p>
+
+    <ul class="list-bullet">
+      {{#skills.desirable}}
+      <li>{{.}}</li>
+      {{/skills.desirable}}
+    </ul>
+
+    <h3 class="heading-medium">Civil Service Competencies</h3>
+
+    <p>The successful candidate must show the following competencies from the <a href="http://www.civilservice.gov.uk/wp-content/uploads/2012/07/Civil-Service-Competency-Framework-July-2012.pdf">Civil Service Competency Framework</a>:</p>
+
+    <ul class="list-bullet">
+      {{#competencies}}
+      <li>{{.}}</li>
+      {{/competencies}}
+    </ul>
+
+    <h3 class="heading-medium">Benefits</h3>
+    <ul class="list-bullet">
+      {{#benefits}}
+      <li>{{.}}</li>
+      {{/benefits}}
+    </ul>
+
+    <h3 class="heading-medium">How to apply</h3>
+
+    <p>Email your covering letter and CV to <a href="mailto:{{contacts.external_cand}}">{{contacts.external_cand}}</a>, quoting ref number IRC {{ref}}</p>
+    
+    <p>If you’re a civil servant please check the terms and conditions before applying.</p>
+    
+    <p>Applications are welcome from part-timers and job sharers.</p>
+
+    <ul>
+      <li><h4 class="jd_-inline-heading">Closing date:</h4> {{closing_date}}</li>
+      <li><h4 class="jd_-inline-heading">Expected interview dates:</h4> {{interview_dates.start}} - {{interview_dates.end}}</li>
+    </ul>
+
+    <h3 class="heading-medium">Further information</h3>
+
+    <p class="jd__email-contact">For more on this role: <a href="mailto:{{contacts.about_role}}">{{contacts.about_role}}</a></p>
+    <p class="jd__email-contact">For terms and conditions, eligibility and recruitment: <a href="mailto:{{contacts.terms}}">{{contacts.terms}}</a></p>
+    <p class="jd__email-contact"><a href="/jobs/internal_advice">Terms for internal candidates</a></p>
+
+  </div>
+</div>
