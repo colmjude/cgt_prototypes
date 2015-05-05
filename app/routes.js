@@ -72,5 +72,18 @@ module.exports = {
           res.render('jobs/description_developer', data);
       });
     });
+
+    app.get('/jobs/description_general', function (req, res) {
+      var data;
+      fs.readFile(path.join(__dirname, 'data/general_jd.json'), {encoding: 'utf-8'}, function (err, data) {
+          if (err) {
+              throw err;
+          } else {
+            data = JSON.parse(data);
+          }
+          res.render('jobs/description_general', data);
+      });
+    });
+
   }
 };
