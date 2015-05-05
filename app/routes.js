@@ -85,5 +85,17 @@ module.exports = {
       });
     });
 
+    app.get('/jobs/description_policy', function (req, res) {
+      var data;
+      fs.readFile(path.join(__dirname, 'data/policy_jd.json'), {encoding: 'utf-8'}, function (err, data) {
+          if (err) {
+              throw err;
+          } else {
+            data = JSON.parse(data);
+          }
+          res.render('jobs/description_policy', data);
+      });
+    });
+
   }
 };
