@@ -10,7 +10,7 @@
   "org": {
     "name": "GDS",
     "desc": "<p>We are leading the digital transformation of government, making public services digital by default, and simpler, clearer and faster to use.</p>",
-    "more": "<a href='https://www.gov.uk/government/organisations/government-digital-service/about'>Read more about what we do</a>"
+    "more": "https://www.gov.uk/government/organisations/government-digital-service/about"
   },
   "profession": "Digital",
   "skills": {

@@ -10,7 +10,7 @@
   "org": {
     "name": "Care Quality Commission",
     "desc": "<p>We monitor, inspect and regulate health and social care services to make sure they meet fundamental standards of quality and safety.</p>",
-    "more": "<a href='http://www.cqc.org.uk/content/what-we-do'>Read more about what we do</a>"
+    "more": "http://www.cqc.org.uk/content/what-we-do"
   },
   "profession": "",
   "skills": {
