@@ -14,7 +14,7 @@
   },
   "profession": "",
   "skills": {
-    "universal": [],
+    "universal": ["Administration", "Support","Operational Delivery","Secretarial","Event Planning","Communications"],
     "essential": [
       "good organisational skills, ability to prioritise and meet deadlines",
       "excellent communication skills",
