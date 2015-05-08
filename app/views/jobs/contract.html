@@ -1,0 +1,62 @@
+{{<govuk_template}}
+
+{{$head}}
+  {{>includes/jobs_head}}
+  <link href="/public/stylesheets/contract.css" media="screen" rel="stylesheet" type="text/css" />
+{{/head}}
+
+{{$content}}
+<main id="content" role="main">
+
+  <a href="/" class="example-back-link">Back to the cross government tools' prototypes</a>
+
+  <header class="profile--include">
+    <h1 class="form-title heading-large">
+    Contract
+    </h1>
+    <p class="lede">Read the details carefully before signing</p>
+  </header>
+
+  <section class="section contract contract__summary">
+    <dl>
+      <dt>Name</dt>
+      <dd>Colm Britton</dd>
+      <dt>Role</dt>
+      <dd>Frontend Designer</dd>
+      <dd><a href="">check job description</a></dd>
+      <dt>Company</dt>
+      <dd>GDS</dd>
+      <dt>Contract type</dt>
+      <dd>Temporary</dd>
+      <dt>Salary</dt>
+      <dd>£46,450</dd>
+      <dt>Start date</dt>
+      <dd><datetime>12th June 2015</datetime></dd>
+      <dt>Employee number</dt>
+      <dd>???</dd>
+    </dl>
+    
+  </section>
+
+  <section class="section"></section>
+  <section class="section"></section>
+
+  <section class="review__section">
+
+    <div class="switch">
+      <input id="sign" name="sign" type="checkbox" class="switch__checkbox" value="y" />
+      <label for="sign" class="switch__label">Sign</label>
+      <span class="switch__checkbox__label">Sign contract</span>
+    </div>
+
+  </section>
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+  <script src="/public/javascripts/contract.js"></script>
+{{/bodyEnd}}
+
+{{/govuk_template}}
