@@ -16,13 +16,19 @@ $gutter-third: $gutter/3;
   display: block;
   width: 3*$gutter;
   background: $panel-colour;
-  color: $panel-colour;
+  text-indent: -9999px;
   height: 2*$gutter;
   position: absolute;
   top: 0; left: 0;
 
   &:hover {
     cursor: pointer;
+  }
+}
+
+.contract--signed ~ .section {
+  .switch__label {
+    background: $link-hover-colour;
   }
 }
 
@@ -45,6 +51,18 @@ $gutter-third: $gutter/3;
 .switch__checkbox__label {
   margin-left: 3*$gutter;
   line-height: 2*$gutter;
+}
+
+.contract {
+  background: #ededed url(../images/crest-bookmark-grey.png) no-repeat right 15px top;
+  background-size: 80px;
+  opacity: 0.8;
+  padding: $gutter-half;
+}
+
+.contract--signed {
+  background: #ededed url(../images/crest-bookmark-blue.png) no-repeat right 15px top;
+  opacity: 1;
 }
 
 .contract__summary dt {
