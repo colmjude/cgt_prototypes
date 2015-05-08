@@ -2,6 +2,7 @@
 
 {{$head}}
   {{>includes/jobs_head}}
+  <link href="/public/stylesheets/radar-chart.css" media="screen" rel="stylesheet" type="text/css" />
   <link href="/public/stylesheets/review.css" media="screen" rel="stylesheet" type="text/css" />
 {{/head}}
 
@@ -26,11 +27,11 @@
     <h2 class="heading-medium">Skills for ...</h2>
     <div class="grid-row">
       <div class="column-half">
-        <img src="http://placehold.it/450x300" alt="" />
+        <div class="results__personal"></div>
         <p class="caption">How you scored yourself</p>
       </div>
       <div class="column-half">
-        <img src="http://placehold.it/450x300" alt="" />
+        <div class="results__peer"></div>
         <p class="caption">How your colleagues scored you</p>
       </div>
     </div>
@@ -59,7 +60,9 @@
 
 {{$bodyEnd}}
   {{>includes/elements_scripts}}
-  <script src="/public/javascripts/review.js"></script>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="/public/javascripts/lib/radar-chart.js"></script>
+  <script src="/public/javascripts/review-summary.js"></script>
 {{/bodyEnd}}
 
 {{/govuk_template}}
