@@ -68,3 +68,11 @@ $gutter-third: $gutter/3;
 .contract__summary dt {
   @extend .heading-small;
 }
+
+.contract__terms__content {
+  @include copy-16();
+}
+
+.contract__terms__content span {
+  font-weight: bolder;
+}
