@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!--[if lt IE 9]><html class="lte-ie8" lang=""><![endif]-->
+<!--[if gt IE 8]><!--><html lang=""><!--<![endif]-->
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+
+    <title>{{$pageTitle}}GOV.UK - The best place to find government services and information{{/pageTitle}}</title>
+    {{$head}}{{/head}}
+    {{>includes/email_head}}
+    {{$addStylesheets}}{{/addStylesheets}}
+  </head>
+
+  <body>
+
+    <div class="email">
+      <header class="email__meta">
+        <p class="email__meta__item"><span>To:</span>{{$emailTo}}colmjude@gmail.com{{/emailTo}}</p>
+        <p class="email__meta__item"><span>From:</span>{{$emailFrom}}someone@email.com{{/emailFrom}}</p>
+        <p class="email__meta__item"><span>Subject</span>{{$emailSubject}}Job chat{{/emailSubject}}</p>
+      </header>
+      <article class="email__content">
+        {{$emailContent}}{{/emailContent}}
+      </article>
+    </div>
+
+    {{$bodyEnd}}
+      {{>includes/scripts}}
+    {{/bodyEnd}}
+
+  </body>
+</html>
