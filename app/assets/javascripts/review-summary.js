@@ -25,23 +25,30 @@ var peer_data = [
   }
 ];
 
-var renderRadarChart = function(data, selector, config) {
-  var chart = RadarChart.chart();
-  chart.config(config);
+;(function($) {
+  'use strict';
 
-  var svg = d3.select(selector).append('svg')
-    .attr('width', config.w)
-    .attr('height', config.h);
+  var renderRadarChart = function(data, selector, config) {
+    var chart = RadarChart.chart();
+    chart.config(config);
 
-    svg.append('g').classed('focus', 1).datum(data).call(chart);
-};
+    var svg = d3.select(selector).append('svg')
+      .attr('width', config.w)
+      .attr('height', config.h);
 
-var config = {
-    w: 450,
-    h: 300
-};
+      svg.append('g').classed('focus', 1).datum(data).call(chart);
+  };
 
-// render personal results
-renderRadarChart(personal_data, ".results__personal", config);
-// render peer results
-renderRadarChart(peer_data, ".results__peer", config);
+  $(function() {
+    var config = {
+        w: 450,
+        h: 300
+    };
+
+    // render personal results
+    renderRadarChart(personal_data, ".results__personal", config);
+    // render peer results
+    renderRadarChart(peer_data, ".results__peer", config);
+  });
+
+}(jQuery));
