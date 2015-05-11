@@ -61,7 +61,7 @@ module.exports = {
         ]});
     });
 
-    app.get('/jobs/description_developer', function (req, res) {
+    app.get('/jobs/description_backend_developer', function (req, res) {
       var data;
       fs.readFile(path.join(__dirname, 'data/dev_jd.json'), {encoding: 'utf-8'}, function (err, data) {
           if (err) {
@@ -94,6 +94,18 @@ module.exports = {
             data = JSON.parse(data);
           }
           res.render('jobs/description_policy', data);
+      });
+    });
+
+    app.get('/jobs/description_frontend_developer', function (req, res) {
+      var data;
+      fs.readFile(path.join(__dirname, 'data/f_dev_jd.json'), {encoding: 'utf-8'}, function (err, data) {
+          if (err) {
+              throw err;
+          } else {
+            data = JSON.parse(data);
+          }
+          res.render('jobs/description_frontend_developer', data);
       });
     });
 
