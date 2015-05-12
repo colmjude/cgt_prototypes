@@ -1,0 +1,16 @@
+@import 'elements';
+
+.access-summary {
+  border: 8px solid $link-hover-colour;
+  border-radius: 2px;
+  @extend #content;
+}
+
+.access-summary__content {
+  margin: $gutter-half;
+
+  .button-secondary {
+    background-color: $border-colour;
+  }
+}
+
