@@ -40,6 +40,9 @@
 
 .app__status--saved { background: $yellow; }
 .app__status--rejected { background: $error-colour; }
+.app__status--incomplete { background: $beta-colour; }
+.app__status--in-progress { background: $link-visited-colour; }
+.app__status--offer { background: $button-colour; }
 
 .app__info {
   width: 85%;
