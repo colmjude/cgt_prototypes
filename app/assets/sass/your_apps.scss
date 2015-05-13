@@ -38,16 +38,16 @@
   padding: $gutter-half;
 }
 
-.button--received-active, .button--received:hover { 
+.button--received.active, .button--received:hover { 
   background: $link-hover-colour;
 }
 .button--saved, .button--rejected, .button--incomplete, .button--in-progress,
 .button--offer, .button--received { background: $border-colour; }
-.app__status--saved, .button--saved-active, .button--saved:hover { background: $yellow; }
-.app__status--rejected, .button--rejected-active, .button--rejected:hover { background: $error-colour; }
-.app__status--incomplete, .button--incomplete-active, .button--incomplete:hover { background: $beta-colour; }
-.app__status--in-progress, .button--in-progress-active, .button--in-progress:hover { background: $link-visited-colour; }
-.app__status--offer, .button--offer-active, .button--offer:hover { background: $button-colour; }
+.app__status--saved, .button--saved.active, .button--saved:hover { background: $yellow; }
+.app__status--rejected, .button--rejected.active, .button--rejected:hover { background: $error-colour; }
+.app__status--incomplete, .button--incomplete.active, .button--incomplete:hover { background: $beta-colour; }
+.app__status--in-progress, .button--in-progress.active, .button--in-progress:hover { background: $link-visited-colour; }
+.app__status--offer, .button--offer.active, .button--offer:hover { background: $button-colour; }
 
 .app__info {
   width: 85%;
