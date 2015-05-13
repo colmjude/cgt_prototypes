@@ -20,10 +20,21 @@
   </header>
 
   <section class="review__section">
-    <ul>
+
+    <details class="filter">
+      <summary>Filter your applications</summary>
+      <button data-status="saved" class="button button--saved">Saved (2)</button>
+      <button data-status="incomplete" class="button button--incomplete">Incomplete (1)</button>
+      <button data-status="received" class="button button--received">Received (1)</button>
+      <button data-status="inprogress" class="button button--in-progress">In progress (1)</button>
+      <button data-status="offer" class="button button--offer">Offers (1)</button>
+      <button data-status="rejected" class="button button--rejected">Rejected (1)</button>
+    </details>
+
+    <ul class="apps__list">
 
       <!-- application completed -->
-      <li class="app__container">
+      <li class="app__container" data-jd-status="received">
         <div class="app__wrapper">
           <div class="app__status">
             <p>received</p>
@@ -56,7 +67,7 @@
       </li>
 
       <!-- application saved, GDS -->
-      <li class="app__container">
+      <li class="app__container" data-jd-status="saved">
         <div class="app__wrapper">
           <div class="app__status app__status--saved">
             <p>saved for later</p>
@@ -91,7 +102,7 @@
       </li>
 
       <!-- application saved, MoJ -->
-      <li class="app__container">
+      <li class="app__container" data-jd-status="saved">
         <div class="app__wrapper">
           <div class="app__status app__status--saved">
             <p>saved for later</p>
@@ -126,7 +137,7 @@
       </li>
 
       <!-- application incomplete, MoJ -->
-      <li class="app__container">
+      <li class="app__container" data-jd-status="incomplete">
         <div class="app__wrapper">
           <div class="app__status app__status--incomplete">
             <p>incomplete</p>
@@ -160,7 +171,7 @@
       </li>
 
       <!-- application in progress, MoJ -->
-      <li class="app__container">
+      <li class="app__container" data-jd-status="inprogress">
         <div class="app__wrapper">
           <div class="app__status app__status--in-progress">
             <p>in progress</p>
@@ -194,11 +205,11 @@
       </li>
 
       <!-- application offer, MoJ -->
-      <li class="app__container">
+      <li class="app__container" data-jd-status="offer">
         <div class="app__wrapper">
           <div class="app__status app__status--offer">
             <p>offer given</p>
-            <a href="" class="app__status__button">view next steps</a>
+            <a href="/jobs/contract" class="app__status__button">view contract</a>
           </div>
           <div class="app__info jd__listing">
             <div class="jd__reference">
@@ -228,7 +239,7 @@
       </li>
 
       <!-- application rejected, MoJ -->
-      <li class="app__container">
+      <li class="app__container" data-jd-status="rejected">
         <div class="app__wrapper">
           <div class="app__status app__status--rejected">
             <p>rejected</p>
@@ -266,6 +277,7 @@
 
 {{$bodyEnd}}
   {{>includes/elements_scripts}}
+  <script src="/public/javascripts/your_apps.js"></script>
 {{/bodyEnd}}
 
 {{/govuk_template}}
