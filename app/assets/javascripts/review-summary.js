@@ -6,8 +6,9 @@ var personal_data = [
       {axis: "javascript", value: 3},
       {axis: "HTML", value: 5},
       {axis: "CSS", value: 4},
-      {axis: "Python", value: 1},
-      {axis: "User needs", value: 2, xOffset: -20}
+      {axis: "Problem solving", value: 3, xOffset: 25},
+      {axis: "User needs", value: 2, xOffset: 15},
+      {axis: "Open source", value: 3}
     ]
   }
 ];
@@ -19,8 +20,9 @@ var peer_data = [
       {axis: "javascript", value: 3}, 
       {axis: "HTML", value: 1},  
       {axis: "CSS", value: 4},
-      {axis: "Python", value: 2},
-      {axis: "User needs", value: 1}
+      {axis: "Problem solving", value: 3, xOffset: 25},
+      {axis: "User needs", value: 1, xOffset: 15},
+      {axis: "Open source", value: 3}
     ]
   }
 ];
