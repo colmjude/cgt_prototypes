@@ -14,7 +14,9 @@
   },
   "profession": "Digital",
   "skills": {
-    "universal": [ "Agile", "Scala", "Ruby", "Python", "User needs", "Problem solving", "Digital services", "User centred design", "Web security", "Open standards", "Open source"],
+    "technical": ["Scala", "Ruby", "Python", "Web security"],
+    "knowledge": ["Agile", "User needs", "Open standards", "Open source", "User centred design", "Digital services"],
+    "personal": ["Problem solving", "Decision making"],
     "essential": [
       "back-end experience, with detailed knowledge of Ruby, Java, Python and Scala",
       "understanding of software design principles, problem solving and the ability to diagnose and debug production issues",

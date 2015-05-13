@@ -14,7 +14,9 @@
   },
   "profession": "Digital",
   "skills": {
-    "universal": [ "Agile", "Javascript", "User needs", "HTML", "CSS", "Problem solving", "Digital services", "User centred design", "Open standards", "Open source"],
+    "technical": [ "HTML", "CSS", "Javascript"],
+    "knowledge": ["Agile", "User needs", "Open standards", "Open source", "User centred design", "Digital services"],
+    "personal": ["Problem solving", "Decision making"],
     "essential": [
       "front-end experience, with detailed knowledge of CSS, HTML, and Javascript",
       "understanding of software design principles, problem solving and the ability to diagnose and debug production issues",

@@ -23,11 +23,23 @@
       <p>37</p>
     </div>
     <div class="jd__key-info__item">
-      <h4 class="heading-small">Associated skills</h4>
+      <h4 class="heading-small">Technical skills</h4>
       <ul class="skills-list skills-list--dark">
-        {{#skills.universal}}
+        {{#skills.technical}}
         <li class="skill"><a href="/jobs/search_by_skill#{{.}}">{{.}}</a></li>
-        {{/skills.universal}}
+        {{/skills.technical}}
+      </ul>
+      <h4 class="heading-small">Knowledge skills</h4>
+      <ul class="skills-list skills-list--dark">
+        {{#skills.knowledge}}
+        <li class="skill"><a href="/jobs/search_by_skill#{{.}}">{{.}}</a></li>
+        {{/skills.knowledge}}
+      </ul>
+      <h4 class="heading-small">Personal skills</h4>
+      <ul class="skills-list skills-list--dark">
+        {{#skills.personal}}
+        <li class="skill"><a href="/jobs/search_by_skill#{{.}}">{{.}}</a></li>
+        {{/skills.personal}}
       </ul>
     </div>
   </div>
