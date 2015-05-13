@@ -1,0 +1,21 @@
+{{<govuk_template}}
+
+{{$head}}
+  <link href="/public/stylesheets/receipt.css" media="screen" rel="stylesheet" type="text/css" />
+{{/head}}
+
+{{$content}}
+<main id="content" role="main">
+  <a href="/" class="example-back-link">Back to the cross government tools' prototypes</a>
+  
+  <input type="file" id="take-picture" accept="image/*">
+
+</main><!-- / #page-container -->
+{{/content}}
+
+{{$bodyEnd}}
+  {{>includes/elements_scripts}}
+  <script src="/public/javascripts/receipts.js"></script>
+{{/bodyEnd}}
+
+{{/govuk_template}}
