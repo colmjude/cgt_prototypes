@@ -1,14 +1,22 @@
 {{<govuk_template}}
 
 {{$head}}
-  <link href="/public/stylesheets/receipt.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="/public/stylesheets/receipts.css" media="screen" rel="stylesheet" type="text/css" />
 {{/head}}
 
 {{$content}}
 <main id="content" role="main">
   <a href="/" class="example-back-link">Back to the cross government tools' prototypes</a>
   
-  <input type="file" id="take-picture" accept="image/*">
+  <section class="section">
+    <h2 class="heading-medium">Add receipts</h2>
+    <input type="file" id="take-picture" accept="image/*">
+  </section>
+
+  <section class="section">
+    <h2 class="heading-medium">Preview:</h2>
+    <img src="about:blank" alt="" id="show-picture" />
+  </section>
 
 </main><!-- / #page-container -->
 {{/content}}
